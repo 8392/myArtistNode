@@ -11,5 +11,6 @@ module.exports = {
 	    secure:   false,
 	    maxAge:   365 * 24 * 60 * 60 * 1000,
 		}
-	}
+	},
+	baseUrl: 'http://localhost:8001',
 }

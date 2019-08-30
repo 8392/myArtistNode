@@ -1,5 +1,6 @@
 import fetch from 'node-fetch';
 import Ids from '../models/ids'
+import config from '../config/default'
 import formidable from 'formidable'
 import path from 'path'
 import fs from 'fs'
@@ -124,16 +125,10 @@ export default class BaseComponent {
 				const repath = './public/img/' + fullName;
 				try{
 					fs.renameSync(files.file.path, repath);
-					gm(repath)
-					.resize(200, 200, "!")
-					.write(repath, async (err) => {
-						// if(err){
-						// 	console.log('裁切图片失败');
-						// 	reject('裁切图片失败');
-						// 	return
-						// }
-						resolve(fullName)
-					})
+					// console.log(repath)
+					const imgUrl = config.baseUrl + '/img/' + fullName;
+					console.log(imgUrl)
+					resolve(fullName)
 				}catch(err){
 					console.log('保存图片失败', err);
 					if (fs.existsSync(repath)) {
