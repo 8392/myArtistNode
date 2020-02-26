@@ -1,0 +1,9 @@
+/xmysbz-flow-line/compre-depart/preliminary-comments    建议初评评审人
+/xmysbz-flow-line/compre-depart/initial-assignment           指派初评评审人
+/xmysbz-flow-line/compre-depart/recommended-review     建议复核评审人
+/xmysbz-flow-line/compre-depart/assignment-review          指派复核评审人
+/xmysbz-flow-line/compre-depart/suggested-finance          建议财务复核人
+/xmysbz-flow-line/compre-depart/assigned-finance             指派财务复核人
+/xmysbz-flow-line/compre-depart/complement-information   补全信息
+
+/xmysbz-flow-line/engineer-depart/assign-execut                指派执行人
